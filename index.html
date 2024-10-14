@@ -1,1 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nailong Memecoin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        /********** Global Styles ***********/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font: normal 16px sans-serif;
+            color: #000; /* Changed to black for contrast */
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .btn {
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            background-color: #BC4811;
+            color: #FFF; /* Button text color */
+            padding: 15px 30px;
+            display: inline-flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .btn i {
+            margin-right: 8px; /* Space between icon and text */
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 100px 80px;
+        }
+
+        section:not(.hero):nth-child(even) {
+            background-color: #f5f5f5;
+        }
+
+        section p {
+            max-width: 775px;
+            line-height: 2;
+            padding: 0 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .title {
+            text-transform: capitalize;
+            font: bold 32px "Open Sans";
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        hr {
+            width: 250px;
+            height: 3px;
+            background-color: #000; /* Changed to black for contrast */
+            border: 0;
+            margin-bottom: 50px;
+        }
+
+        /********** Grid **********/
+
+        .grid {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /********** Header **********/
+
+        header {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 35px 100px 0;
+            color: #000; /* Changed to black for contrast */
+            opacity: 1;
+        }
+
+        header h2 {
+            font-family: "Quicksand";
+        }
+
+        /********** Hero **********/
+
+        .hero {
+            position: relative;
+            justify-content: flex-start;
+            text-align: center;
+            min-height: 100vH;
+            color: #FFF;
+        }
+
+        .hero .bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .hero-content {
+            margin-top: 300px;
+        }
+
+        .hero h1 {
+            font: bold 60px "Open Sans";
+            margin-bottom: 15px;
+        }
+
+        .hero h3 {
+            font: normal 28px "Open Sans";
+            margin-bottom: 40px;
+        }
+
+        /********** Tours **********/
+
+        #tours .grid li {
+            height: 350px;
+            padding: 20px;
+            background-clip: content-box;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #tours .grid li.small {
+            flex-basis: 30%;
+        }
+
+        #tours .grid li.large {
+            flex-basis: 70%;
+        }
+
+        /********** Packages **********/
+
+        #packages .grid li {
+            padding: 50px;
+            flex-basis: 50%;
+            text-align: center;
+        }
+
+        /********** Contact **********/
+
+        #contact {
+            text-align: center;
+        }
+
+        /********** Media Queries **********/
+
+        @media (max-width: 1100px) {
+            #tours .grid li.small,
+            #tours .grid li.large {
+                flex-basis: 50%;
+            }
+        }
+
+        @media (max-width: 800px) {
+            section {
+                padding: 50px 20px;
+            }
+
+            header {
+                padding: 20px 50px;
+                flex-direction: column;
+                opacity: 1;
+            }
+
+            header h2 {
+                margin-bottom: 15px;
+            }
+
+            .hero {
+                min-height: 600px;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .hero h3 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Nailong on Sui</h2>
+    </header>
+
+    <section class="hero">
+        <div class="bg-img" style="background-image: url('https://raw.githubusercontent.com/nailongsui/nailongsui.github.io/refs/heads/main/assets/landscape.jpg');"></div>
+        <div class="hero-content">
+            <h1>Welcome to Nailong Memecoin!</h1>
+            <h3>Experience the future of cryptocurrency with a total supply of 1 billion on the Sui network!</h3>
+        </div>
+    </section>
+
+    <section id="tours">
+        <h3 class="title">Why Nailong is the Best Memecoin</h3>
+        <p>Forget the moon! We’re aiming for the whole galaxy! Here’s why you’ll love Nailong:</p>
+        <hr>
+        <ul class="grid">
+            <li class="small" style="background-image: url('https://raw.githubusercontent.com/nailongsui/nailongsui.github.io/refs/heads/main/assets/hero.jpeg');">
+                <h4>Unlimited Laughs</h4>
+                <p>Investing in Nailong is like telling dad jokes: you might cringe, but you can’t help but smile!</p>
+            </li>
+            <li class="large" style="background-image: url('https://raw.githubusercontent.com/nailongsui/nailongsui.github.io/refs/heads/main/assets/1b.png');">
+                <h4>Viral Memes</h4>
+                <p>Our memes are so good, even your grandma will want to invest! 😂</p>
+            </li>
+            <li class="large" style="background-image: url('https://raw.githubusercontent.com/nailongsui/nailongsui.github.io/refs/heads/main/assets/1b.png');">
+                <h4>Community Shenanigans</h4>
+                <p>Join our crew for ridiculous challenges, wacky contests, and who knows? Maybe a dance-off!</p>
+            </li>
+            <li class="small" style="background-image: url('https://raw.githubusercontent.com/nailongsui/nailongsui.github.io/refs/heads/main/assets/kaget.jpeg');">
+                <h4>Token for Giggles</h4>
+                <p>Our token isn’t just for trading; it’s also your ticket to the most fun crypto party in the universe!</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="packages">
+        <h3 class="title">Tokenomics</h3>
+        <p>Our tokenomics ensures sustainability and community rewards.</p>
+        <hr>
+        <ul class="grid">
+            <li>
+                <h4>Active Community</h4>
+                <p>Join our active community and contribute to the growth of Nailong!</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h3 class="title">Get Involved</h3>
+        <p>Join us on our journey to revolutionize the memecoin market!</p>
+        <hr>
+        <a href="https://x.com/NailongSui" class="btn" target="_blank">
+            <i class="fab fa-x"></i> Follow Us on X.com
+        </a>
+    </section>
+</body>
+</html>
 
